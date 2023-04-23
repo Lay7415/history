@@ -100,39 +100,27 @@ p::-webkit-scrollbar-thumb {
     transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4d90fe;
+    box-shadow: 0 0 5px rgba(77, 144, 254, 0.5);
+}
+
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
 .navigation-container button:hover {
     transform: scale(1.1);
     background-color: #333;
-    color: #fff;
-}
-
-.navigation-container button:disabled {
-    opacity: 0.5;
-    cursor: default;
-}
-
-.prev-page {
-    transform: scaleX(-1);
-}
-
-@media screen and (min-width: 768px) {
-    .card {
-        height: 400px;
-    }
-
-    .numberQuestion {
-        font-size: 24px;
-    }
-
-    .front,
-    .back {
-        padding: 20px;
-    }
-
-    .navigation-container button {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        margin: 10px;
-    }
+    color: white;
 }
